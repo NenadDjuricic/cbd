@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useEffect} from "react"
 import Layout from '../components/Layout'
 import StyledHero from '../components/StyledHero'
 import Banner from '../components/Banner'
@@ -10,10 +10,12 @@ import Prog from '../components/progress'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 
-AOS.init({
-  duration: 1200,
-});
-const cbd = ({data}) => (
+
+const Cbd = ({data}) => {
+  useEffect(()=>{
+    AOS.init({duration: 1200});
+  }, []);
+  return(
   <>
      <Layout>
      <Carousel>
@@ -70,6 +72,8 @@ const cbd = ({data}) => (
   </Layout>
   </>
 )
+}
+
 export const query = graphql`
 query{
   defaultBcgCbd:file(relativePath: { eq: "whatis1.jpeg" }){
@@ -109,5 +113,5 @@ query{
   }
 }
 `
-export default cbd
+export default Cbd
 
