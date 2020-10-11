@@ -8,6 +8,7 @@ module.exports = {
     description:"Najbolji proizvodi od cistog cbd-a, cbd kreme, cbd cajevi. Prirodna medicina, zategnite lice i osecajte se srecno i ispunjeno uz najbolje CBD proizvode.",
     author: "Nenad Djuricic",
     image:"/CbdProducts.jpeg",
+    siteUrl:`https://cbdrs.netlify.app`
   },
   plugins: [{
     resolve: 'gatsby-source-filesystem',
