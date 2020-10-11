@@ -1,0 +1,41 @@
+.video{
+  position: initial;
+}
+.videoCbd{
+    position: relative !important;
+}
+@media screen and (max-width: 768px) {
+    .videoCbd{
+        display: block !important;
+    }
+}
+@media screen and (max-width: 992px) {
+    .videoCbd{
+        display: block !important;
+        width: 100%;
+    }
+}
+.blockquoteCustom {
+    position: relative;
+    font-size: 1.1rem;
+    margin-top: 20px;
+  }
+  
+  .blockquoteCustomIcon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -25px;
+    left: 50px;
+  }
+  .divider {
+    height: 2px;
+    width: 100%;
+    background: blue;
+    background: linear-gradient(90deg, hsl(0, 0%, 20%), hsl(0, 0%, 70%), hsl(0, 0%, 20%));
+    margin-bottom: 10px;
+}

@@ -1,5 +1,6 @@
 .footer {
-    background: #679436;
+  background: linear-gradient(rgba(63, 208, 212, 0.7), rgba(0, 0, 0, 0.4));
+  
     padding: 2rem;
     text-align: center;
     color: var(--mainWhite);
@@ -16,7 +17,8 @@
     font-weight: bold;
   }
   .links a:hover {
-    color: var(--primaryColor);
+    color:grey;
+    text-decoration: none;
   }
   .icons a {
     display: inline-block;

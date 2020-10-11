@@ -1,0 +1,98 @@
+.ul {
+    font-size:0;
+    list-style:none;
+    width:100%;
+    padding: 1px;
+    
+    li {
+      display:inline-block;
+      width:38.3%;
+      margin: 0.5px;
+      img {
+        opacity:0.5;
+        width:100%;
+      }
+      &.feature {
+        float:left;
+        width:61.3%;
+      }
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .ul {
+      li {
+        width:100%;
+        &.feature {
+          width:100%; 
+        }
+      }
+    }
+  }
+  .imge{
+    max-height: 500px;
+  }
+  .imge1{
+    max-height: 250px;
+    width: auto;
+  }
+  .textBlock {
+    position: absolute;
+    bottom: 10%;
+    right: 0%;
+    background-color: #3fd0d4;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    z-index: 100;
+   
+  }
+  .textBlockSecond {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    background-color: #3fd0d4;
+    border: 1px solid silver;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    z-index: 100;
+    h5{
+      margin-bottom: 5px;
+      font-size: 1.5rem;
+      
+    }
+    :hover{
+      opacity: 0.8;
+      cursor: pointer;
+      color: darken($color: white, $amount: 100)
+    }
+    a{
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+  .textBlockThird {
+    position: absolute;
+    top:10px;
+    left: 0px;
+    background-color: #3fd0d4;
+    border: 1px solid silver;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    z-index: 100;
+    h5{
+      margin-bottom: 5px;
+      font-size: 1.5rem;
+    }
+    :hover{
+      opacity: 0.8;
+      cursor: pointer;
+      color: darken($color: white, $amount: 100)
+    }
+    a{
+      text-decoration: none;
+      color: inherit;
+    }
+  }

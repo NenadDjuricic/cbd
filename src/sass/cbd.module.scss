@@ -1,0 +1,41 @@
+.colourBlock {
+    background:#09795f;
+    width:100%;
+    padding:7% 20% 10% 20%;
+    color:#fff;
+    max-height: 500px;
+  }
+  .whiteBlock {
+    background:#fff;
+    width:100%;
+    padding:7% 20% 10% 20%;
+    color: #3fd0d4b3;
+    max-height: 400px;
+  }
+  
+  /*------------------*/
+  /*  SKEW CLOCKWISE  */
+  /*------------------*/
+  .skewCC{
+    width:100%;
+    height:100px;
+    position: relative;;
+    left:0px;
+    background: linear-gradient(to right bottom,  #09795f 49%, #fff 50%)
+  }
+  
+  
+  /*-------------------------*/
+  /* SKEW COUNTER CLOCKWISE  */
+  /*-------------------------*/
+  .skewC{
+    width:100%;
+    height:100px;
+    position: relative;;
+    left:0px;
+    background: linear-gradient(to bottom left, #fff 49%, #09795f 50%);
+  }
+  .containerFluid{
+    padding: 0 !important;
+  }
+  

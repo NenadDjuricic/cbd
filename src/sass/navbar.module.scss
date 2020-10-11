@@ -35,7 +35,6 @@ top:5px;
     list-style-type: none;
     transition: var(--mainTransition);
     height: 0;
-    overflow: hidden;
   }
   .show-nav {
     height: auto;
@@ -46,12 +45,36 @@ top:5px;
     display: block;
     padding: 1rem 1.25rem;
     text-decoration: none;
-    text-transform: capitalize;
     color: var(--mainBlack);
     transition: var(--mainTransition);
     font-weight: bold;
     letter-spacing: var(--mainSpacing);
   }
+ .btn{
+  display: block;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--mainBlack);
+  transition: var(--mainTransition);
+  font-weight: bold;
+  letter-spacing: var(--mainSpacing);
+ button{
+   border:none;
+   display: block;
+  padding: 1rem 1.25rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--mainBlack);
+  transition: var(--mainTransition);
+  font-weight: bold;
+  letter-spacing: var(--mainSpacing);
+  background-color: transparent;
+ }
+ button:hover{
+  color: var(--primaryColor);
+  text-decoration-line: none;
+ }
+ }
   .nav-links a:hover {
     color: var(--primaryColor);
     text-decoration-line: none;
@@ -102,4 +125,9 @@ top:5px;
       transition: all 0.3s ease-in;
     }
   }
-  
+  @media screen and (max-width: 992px) {
+  .nav-links{
+    overflow: auto;
+  }
+ 
+}

@@ -23,8 +23,8 @@ export default [
         text: 'Proizvodi'
     },
     {
-        path:'/gallery',
-        text: 'Galerija'
+        path:'/novosti',
+        text: 'Blog'
     },
     {
         path:'/contact',

@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from '../sass/banner.module.scss'
+
 const Banner = ({title,info,subInfo,children}) => {
     return (
         <div className={styles.banner}>

@@ -6,8 +6,8 @@ import { Link } from "gatsby"
 import styled from 'styled-components'
 const Footer = () => {
   return (
-    <footer className={styles.footer}>
-      <div className={styles.links}>
+    <footer className={`${styles.footer} `}>
+      <div className={`${styles.links} container-fluid`}>
         {links.map((item, index) => {
           return (
             <Link key={index} to={item.path}>
@@ -16,7 +16,7 @@ const Footer = () => {
           )
         })}
       </div>
-      <div className={styles.icons}>
+      <div className={`${styles.icons} `}>
         {social.map((item, index) => {
           return (
             <a
@@ -30,7 +30,7 @@ const Footer = () => {
           )
         })}
       </div>
-      <div className={styles.copyright}>
+      <div className={`${styles.copyright} border-top `}>
         copyright &copy; CBD Srbija {new Date().getFullYear()} Kreirao: NDj Dizajn
       </div>
     </footer>
