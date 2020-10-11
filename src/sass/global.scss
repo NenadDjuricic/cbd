@@ -40,6 +40,9 @@ body {
   a {
     text-decoration: none;
   }
+  .btn:focus{
+    box-shadow: none;
+  }
   .btn-white,
 .btn-primary {
   text-transform: uppercase;
@@ -69,11 +72,20 @@ body {
 }
 .defaultHero {
     min-height: calc(100vh - 315px);
-    background: linear-gradient(rgba(63, 208, 212, 0.7), rgba(0, 0, 0, 0.7)),
-      url("../images/matteo-paganelli-MqISkm2iLGc-unsplash.jpg") center/cover no-repeat;
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
+   
+  }
+  .defaultDivHero{
+    position: absolute;
+    left: 0;
+    top: 0; 
+    right: 0; 
+    bottom: 0;
+    z-index: -11;
+    background: linear-gradient(rgba(63, 208, 212, 0.7), rgba(0, 0, 0, 0.7));
   }
   main{
     min-height: 100vh;
@@ -84,5 +96,147 @@ body {
       .noDisplayLi{
           display: none;
       }
+      .displayLi{
+        display: inline;
+        
+      }
+      
   }
+  .dropdown .dropdown-menu {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; 
+}
+
+.dropdown-menu { /* For Bootstrap 4, use .dropdown.show instead of .dropdown.open */
+    max-height: 350px;
+    opacity: 1;
+}
+.proizvodSlikaIspod{
+  max-height: auto;
+  max-width: 250px;
+}
+.tabela{
+  max-width: 500px;
+}
+.hoverEfekat{
+  :hover{
+  opacity: 0.9;
+  color: darken($color: #8a8989, $amount: 5);
+  background-color: var(--mainGrey);
+  }
+}
+
+/* toggle banner slider */
+.toggle-banner.toggle-slider-wrapper {
+  position: fixed;
+  top: 40vh;
+  left: auto;
+  transform: translateY(-50%);
+  height: 408px;
+  z-index: 1000;
+  right: 0;
+}
+
+/* Container width and height */
+
+.toggle-banner .item {
+  opacity: 1;
+  overflow: hidden;
+  transition: 0.5s all;
+  width: 65px;
+  height: 520px;
+  background: white;
+  padding: 20px 5px;
+}
+
+/* Arrow toggle */
+
+/* Rectangle width and border */
+.toggle-banner.toggle-slider-wrapper .item {
+  width: 250px;
+  border: 4px solid #3fd0d4;
+  border-right: none;
+  border-bottom-left-radius: 10px;
+  padding: 10px 0;
+}
+
+/* Button arrow color and properties */
+.toggle-button {
+  background: #3fd0d4;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  left: auto;
+  top: 95;
   
+}
+.toggle-button {
+  height: 40px;
+  width: 36px;
+  color: #fff;
+  position: relative;
+  top: 10px;
+  font-size: 14px;
+  line-height: 34px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+
+/* Align text inside */
+.toggle-banner-slider .item-wrapper {
+  text-align: center;
+}
+
+.toggle-banner-slider .title {
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  font-size: 20px;
+  line-height: normal;
+  margin-bottom: 15px;
+  padding: 5px 10px;
+  height: 40px;
+}
+
+.toggle-banner-slider .description {
+  font-family: 'Montserrat', sans-serif;
+  color: #222;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+#check:checked ~ .item{
+  width: 0px;
+  border:none;
+}
+
+#check:checked label .toggle-button{
+  display: none;
+}
+
+#check{
+  display: none;
+  
+}
+/* Width of slider expand */
+
+::-webkit-scrollbar{
+  width: 12px;
+}
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(rgba(63, 208, 212, 0.7), rgba(0, 0, 0, 0.7));
+  border-radius: 6px;
+  
+}
+::-webkit-scrollbar-thumb:hover{
+  background: linear-gradient(rgba(63, 208, 212, 0.7), rgba(0, 0, 0, 1));
+}
+.rich{
+  
+}
+
