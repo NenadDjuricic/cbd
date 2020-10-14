@@ -30,7 +30,6 @@ query{
 
 const ulja = ({data}) => {
     const proizvodi = data.ulja.edges;
-    console.log(proizvodi);
     return (
         <Layout>
         <div> 

@@ -4,7 +4,7 @@ import VideoBg from 'reactjs-videobg'
 import mp4 from "../images/cbdVideo.mp4"
 import style from "../sass/aboutPage.module.scss"
 import { FaQuoteLeft } from "react-icons/fa";
-const aboutPage = () => (
+const oNama = () => (
   
       <Layout>
       <div className={style.divider}></div>
@@ -12,9 +12,9 @@ const aboutPage = () => (
         <div className="row">
      <div className="col-12">
        <h1 className="text-center">Mi smo Crystalweed ®</h1>
-       <p className='text-center p-2'>Vec vise od 5 godina u ovom sektroru pazljivo biramo materijale za svoje proizvode kako bismo garantovali maksimalnu vrednost uz najvise iskustvo.
+       <p className='text-center p-2'>Već više od 5 godina u ovom sektroru pažljivo biramo materijale za svoje proizvode kako bismo garantovali maksimalnu vrednost uz najviše iskustvo.
 
-Iz tog razloga,visok kvalitet,pouzdanost i profesionalnost su karakteristike po kojima zelimo da ostanemo upamceni!</p>
+Iz tog razloga,visok kvalitet,pouzdanost i profesionalnost su karakteristike po kojima želimo da ostanemo upamćeni!</p>
      </div>
    </div>
           <div className="row">
@@ -25,7 +25,7 @@ Iz tog razloga,visok kvalitet,pouzdanost i profesionalnost su karakteristike po 
    </VideoBg>
    </div>
    <div className="col-12 col-md-12 col-lg-6 col-xl-6 mt-auto mb-auto">
-     <h1>Posao rodjen iz strasti</h1>
+     <h1>Posao rođen iz strasti</h1>
      <p>People say that if you choose a job you love you will never work a day in your life. We, with Crystalweed, have succeeded in it. Born from an agricultural tradition, we have always cultivated a great passion for the land, which over time has led us to take an interest in alternative cultures, including that of legal cannabis.</p>
      <blockquote className={`${style.blockquote} ${style.blockquoteCustom} bg-white p-5 shadow rounded mt-5`}>
                     <div className={`${style.blockquoteCustomIcon} bg-info shadow-sm`}><FaQuoteLeft className="text-white"/></div>
@@ -40,4 +40,4 @@ Iz tog razloga,visok kvalitet,pouzdanost i profesionalnost su karakteristike po 
 
 )
 
-export default aboutPage
+export default oNama

@@ -1,14 +1,14 @@
 export default [
     {
         path:'/',
-        text: 'Pocetna'
+        text: 'Početna'
     },
     {
         path:'/cbd',
-        text: 'Sta je CBD?'
+        text: 'Šta je CBD?'
     },
     {
-        path:'/aboutPage',
+        path:'/oNama',
         text: 'O nama'
     },
     {

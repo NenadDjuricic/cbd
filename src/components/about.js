@@ -28,11 +28,11 @@ const About = () =>{
         </div> 
            
       </article>
-      <article data-aos="fade-left" className={styles.aboutInfo}>
-        <h4>Posao rodjen <br></br>iz strasti</h4>
-        <p>Vec vise od 5 godina u ovom sektroru pazljivo biramo materijale za svoje proizvode kako bismo garantovali maksimalnu vrednost uz najvise iskustvo.</p>
-        <p>Iz tog razloga,visok kvalitet,pouzdanost i profesionalnost su karakteristike po kojima zelimo da ostanemo upamceni!</p>
-      <Link to="/aboutPage"><button type="button" className="btn-primary">Vise o nama</button></Link>
+      <article  className={styles.aboutInfo}>
+        <h4>Posao roćen <br></br>iz strasti</h4>
+        <p>Već više od 5 godina u ovom sektroru pazljivo biramo materijale za svoje proizvode kako bismo garantovali maksimalnu vrednost uz najviše iskustvo.</p>
+        <p>Iz tog razloga,visok kvalitet,pouzdanost i profesionalnost su karakteristike po kojima želimo da ostanemo upamćeni!</p>
+      <Link to="/oNama"><button type="button" className="btn-primary">Vise o nama</button></Link>
       </article>
    </div>
   </section>

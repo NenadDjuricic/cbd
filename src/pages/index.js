@@ -1,7 +1,6 @@
 import React from "react"
 import {Link} from 'gatsby'
 import Layout from '../components/Layout'
-import styles from '../sass/index.module.scss'
 /* import SimpleHero from '../components/SimpleHero' */
 
 import Banner from '../components/Banner'
@@ -12,11 +11,12 @@ import Istaknuti from '../components/Products/IstaknutiProizvodi'
 import Toggler from '../components/Toggler'
 import {graphql} from "gatsby"
 import ImagesIndex from '../components/ImagesIndex'
+import CorouselBlog from "../components/corouselBlog"
 export default ({data}) => (
 
    <Layout>
      <StyledHero home="true" img={data.defaultBcg.childImageSharp.fluid}>
-     <Banner title="Crystalweed® najbolji CBD proizvodi u Srbiji" info="Dobrodosli u legalan svet proizvoda od kanabisa" subInfo="CBD Ulja  — CBD Cajevi — CBD Kozmetika">
+     <Banner title="Crystalweed® najbolji CBD proizvodi u Srbiji" info="Dobrodošli u legalan svet proizvoda od kanabisa" subInfo="CBD Ulja  — CBD Čajevi — CBD Kozmetika — CBD Pupoljci">
       <Link to='/products' className="btn-white">Proizvodi</Link>
 
      </Banner>
@@ -33,6 +33,7 @@ export default ({data}) => (
 
    <About />
    <ImagesIndex></ImagesIndex>
+   <CorouselBlog></CorouselBlog>
   </Layout>
 )
 

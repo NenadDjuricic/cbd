@@ -9,7 +9,7 @@ const BlogCard = ({blog}) => {
             <div className={styles.imgContainer}>
                 <Image fluid={image.fluid} className={styles.img} alt="jedna vest"/>
                 <AniLink fade className={styles.link} to={`/blog/${slug}`}>
-                    Vise
+                    Više
                 </AniLink>
                 <h6 className={styles.date}> {vreme}</h6>
                 <div className={styles.footer}>

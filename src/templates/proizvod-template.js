@@ -6,7 +6,7 @@ import Img from "gatsby-image"
 import Nutrition from "../components/Nutrition"
 import SastojciLinija from "../components/SastojciLinije"
 const Template = ({data}) => {
-    const {ime,kategorija,sastojci:{sastojci=""},opis:{opis},opisVeciIspod:{opisVeciIspod},images} = data.nekiProizvod;
+    const {images} = data.nekiProizvod;
     const [mainImage,...nekiProizvodImages] = images;
     return (
         <Layout>
@@ -25,10 +25,10 @@ const Template = ({data}) => {
                 {data.nekiProizvod.kategorija === "Set" ? <SastojciLinija /> : ""}
                 <Img fluid={nekiProizvodImages.fluid ? nekiProizvodImages[1].fluid : "" } className="proizvodSlikaIspod"></Img>
                 <h6 className="mt-5 d-inline-block" style={{color:"#3fd0d4"}}>Kategorija: </h6><p className="d-inline-block text-dark">{data.nekiProizvod.kategorija}</p>
-                {data.nekiProizvod.kategorija == "Set" ? "" : <div><h6 className="mt-2 d-inline" style={{color:"#3fd0d4"}}>Sastojci:</h6> <p className="d-inline text-dark ">{data.nekiProizvod.sastojci.sastojci}</p></div>}
+                {data.nekiProizvod.kategorija === "Set" ? "" : <div><h6 className="mt-2 d-inline" style={{color:"#3fd0d4"}}>Sastojci:</h6> <p className="d-inline text-dark ">{data.nekiProizvod.sastojci.sastojci}</p></div>}
                 </div>
-    {data.nekiProizvod.opisVeciIspod.opisVeciIspod == '""' ? "" : <p>{data.nekiProizvod.opisVeciIspod.opisVeciIspod}</p>}
-{data.nekiProizvod.kategorija == "Čaj" ? <Nutrition /> : ""}
+    {data.nekiProizvod.opisVeciIspod.opisVeciIspod === '""' ? "" : <p>{data.nekiProizvod.opisVeciIspod.opisVeciIspod}</p>}
+{data.nekiProizvod.kategorija === "Čaj" ? <Nutrition /> : ""}
                
 
                 </div>

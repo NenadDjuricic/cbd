@@ -30,7 +30,6 @@ query{
 
 const pupoljci = ({data}) => {
     const proizvodi = data.pupoljci.edges;
-    console.log(proizvodi);
     return (
         <Layout>
         <div> 

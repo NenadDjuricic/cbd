@@ -7,14 +7,13 @@ import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 const Blog = ({data}) => {
     const {naslov,
     vreme,
-  kratakTekst:kratakTekst,
+  kratakTekst,
   velikiTekst:{json}} = data.post
-  console.log(json)
  const options ={
      renderNode:{
          "embedded-asset-block":(node)=>{
              return <div className="rick">
-             <img width="400" data-aos="fade-in" src={node.data.target.fields.file["en-US"].url}></img>
+             <img width="400"  src={node.data.target.fields.file["en-US"].url} alt="blog"></img>
              </div>
          }
      }

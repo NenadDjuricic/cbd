@@ -11,7 +11,6 @@ const Navbar = () => {
   const toggleNav = () => {
     setNav(isOpen => !isOpen)
   }
-  console.log(isOpen)
   return (
     <nav className={styles.navbar}>
       <div className={styles.navCenter}>
@@ -42,7 +41,7 @@ const Navbar = () => {
             
               <Dropdown.Menu>
                 <Dropdown.Item><AniLink fade to="/kozmetika" duration={0.5}>Kozmetika</AniLink></Dropdown.Item>
-                <Dropdown.Item><AniLink fade to="/cajevi">Cajevi</AniLink></Dropdown.Item>
+                <Dropdown.Item><AniLink fade to="/cajevi">Čajevi</AniLink></Dropdown.Item>
                 <Dropdown.Item ><AniLink fade to="/ulja">Ulja</AniLink></Dropdown.Item>
                 <Dropdown.Item ><AniLink fade to="/pupoljci">Pupoljci</AniLink></Dropdown.Item>
               </Dropdown.Menu>

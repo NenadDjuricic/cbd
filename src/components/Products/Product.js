@@ -5,7 +5,7 @@ import {FaCannabis} from 'react-icons/fa'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 const Product = ({proizvod}) => {
-  const {ime,slug,opis,images,kategorija} = proizvod
+  const {ime,slug,images,kategorija} = proizvod
   let glavnaSlika = images[0].fluid
 
     return (

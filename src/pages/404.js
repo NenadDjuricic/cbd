@@ -6,7 +6,7 @@ import { Link } from "gatsby"
 const error = () => (
     <Layout>
     <header className={styles.error}>
-    <Banner title="Uuuuuups verovatno ste na pogresnom putu">
+    <Banner title="Uuuuuups verovatno ste na pogrešnom putu">
       <Link to="/" className="btn-primary">
         Nazad na pocetnu
       </Link>

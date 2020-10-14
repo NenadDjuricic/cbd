@@ -3,7 +3,6 @@
     list-style:none;
     width:100%;
     padding: 1px;
-    
     li {
       display:inline-block;
       width:38.3%;
@@ -28,12 +27,37 @@
         }
       }
     }
+    
+  }
+  @media (max-width: 640px) {
+    .ul {
+      li {
+        width:100%;
+        &.feature {
+          width:100%; 
+        }
+      }
+    }
+    
+  }
+  @media (max-width: 1000px) {
+    .imge2{
+     height: 250px;
+    }
+    .imge1{
+      height: 230px;
+      
+    }
   }
   .imge{
-    max-height: 500px;
+    max-height: 400px;
   }
   .imge1{
-    max-height: 250px;
+    max-height: 200px;
+    width: auto;
+  }
+  .imge2{
+    max-height: 200px;
     width: auto;
   }
   .textBlock {

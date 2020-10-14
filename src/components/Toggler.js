@@ -24,7 +24,7 @@ const Toggler = () => {
         <div className={"toggle-banner toggle-slider-wrapper d-none d-sm-none d-md-block"}>
         <input type="checkbox" id="check">
             </input>
-            <label for="check">
+            <label htmlFor="check">
             <div className="toggle-button" >  <FaArrowRight />    </div>
             </label>
         <div className="item">
@@ -39,7 +39,7 @@ const Toggler = () => {
                       <p className="text-center">Krema za lice protiv starenja Bio Cristalweed, ima piling i hidratantnu kremu, dajući licu mladost i svežinu. Dubinskim prodiranjem u različite slojeve kože uklanjaju se znaci starenja, a koža je glađa i čistija. &nbsp;
                         </p>
                         <Img fluid={data.defaultToggler.childImageSharp.fluid} />
-                      <Link to='/products' className="btn-primary btn-outline-dark mt-4">Vise o kozmetici</Link>
+                      <Link to='/products' className="btn-primary btn-outline-dark mt-4">Više o kozmetici</Link>
                     </div>
                   </div>
                 </div>

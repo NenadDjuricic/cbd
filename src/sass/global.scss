@@ -54,6 +54,24 @@ body {
   transition: var(--mainTransition);
   cursor: pointer;
 }
+.btn-secondary {
+  
+  text-transform: uppercase;
+  letter-spacing: var(--mainSpacing);
+  color: var(--mainWhite);
+  border: 1px solid var(--mainWhite);
+  padding: 0.5rem 1.2rem;
+  display: inline-block;
+  transition: var(--mainTransition);
+  cursor: pointer;
+  background: var(--primaryColor);
+  color: var(--mainWhite);
+  border: 1px solid var(--mainWhite);
+}
+.btn-secondary:hover{
+  text-decoration: none !important;
+  background-color:  var(--primaryColor);
+}
 .btn-white:hover {
   background: transparent;
   color: var(--primaryColor);
@@ -236,3 +254,6 @@ body {
 ::-webkit-scrollbar-thumb:hover{
   background: linear-gradient(rgba(63, 208, 212, 0.7), rgba(0, 0, 0, 1));
 }
+
+
+

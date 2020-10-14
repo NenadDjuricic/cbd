@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from "../sass/imageIndex.module.scss"
 import AniLink from "gatsby-plugin-transition-link/AniLink";
-import { Link } from "gatsby"
+
 import {graphql, useStaticQuery} from 'gatsby'
 import Img from "gatsby-image"
 
@@ -16,7 +16,7 @@ query{
   }
   second:file(relativePath: { eq: "tea.jpeg" }){
     childImageSharp {
-      fluid(maxWidth:960, maxHeight: 450, quality:100){
+      fluid(maxWidth:660, maxHeight: 450, quality:100){
         ...GatsbyImageSharpFluid
       }
     }
@@ -36,16 +36,15 @@ query{
 
 const ImagesIndex = () => {
     const response = useStaticQuery(query);
-    console.log(response);
     return (
- <ul className={styles.ul}>
+ <ul className={`${styles.ul} container-fluid`}>
   <li className={`${styles.feature} position-relative`}>
-  <div className={`${styles.textBlock}`}>
-    <h4>Opustite se uz omiljeni ukus caja</h4>
+  <div className={`${styles.textBlock} d-none d-sm-block`}>
+    <h4>Opustite se uz omiljeni ukus čaja</h4>
     
   </div>
   <div className={`${styles.textBlockSecond}`}>
-  <AniLink fade to="/cajevi" duration={0.5}><h5 className="text-center">CBD Cajevi</h5></AniLink>
+  <AniLink fade to="/cajevi" duration={0.5}><h5 className="text-center">CBD Čajevi</h5></AniLink>
   </div>
   <Img fluid={response.second.childImageSharp.fluid} className={`${styles.imge}`}/>
   
@@ -54,7 +53,7 @@ const ImagesIndex = () => {
   <div className={`${styles.textBlockThird}`}>
   <AniLink fade to="/kozmetika" duration={0.5}><h5 className="text-center">CBD Kozmetika</h5></AniLink>
   </div>
-  <Img fluid={response.first.childImageSharp.fluid} className={`${styles.imge1}`}/>
+  <Img fluid={response.first.childImageSharp.fluid} className={`${styles.imge2}`}/>
   </li>
   <li className={`position-relative`}>
   <div className={`${styles.textBlockThird}`}>

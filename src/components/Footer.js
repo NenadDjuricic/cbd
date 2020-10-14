@@ -3,7 +3,6 @@ import styles from "../sass/footer.module.scss"
 import links from "../constants/links"
 import social from "../constants/social-icons"
 import { Link } from "gatsby"
-import styled from 'styled-components'
 const Footer = () => {
   return (
     <footer className={`${styles.footer} `}>
@@ -31,7 +30,7 @@ const Footer = () => {
         })}
       </div>
       <div className={`${styles.copyright} border-top `}>
-        copyright &copy; CBD Srbija {new Date().getFullYear()} Kreirao: NDj Dizajn
+        copyright &copy; CBD Srbija {new Date().getFullYear()} Sva prava zadržava: Crystalweed.rs
       </div>
     </footer>
   )
