@@ -27,3 +27,14 @@
   }
   
 }
+@media screen and (max-width: 450px) {
+  .banner {
+    h1{
+    font-size: 2rem;
+    }
+    p {
+      width: 70%;
+      
+    }
+  }
+}

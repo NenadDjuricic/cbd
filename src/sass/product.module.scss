@@ -31,7 +31,7 @@
   padding: 0.9rem 1.6rem;
   display: inline-block;
   transition: var(--mainTransition);
-  
+  transition: 0.5s all;
   cursor: pointer;
 }
 .link:hover {

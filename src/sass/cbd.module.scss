@@ -38,4 +38,12 @@
   .containerFluid{
     padding: 0 !important;
   }
-  
+  @media screen and (max-width: 450px) {
+    .rt {
+      
+      height: 450px;
+    }
+    .para{
+      font-size: 0.90rem;
+    }
+  }

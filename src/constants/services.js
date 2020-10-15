@@ -16,7 +16,7 @@ export default [
     },
     {
         icon: img3,
-        title:"100% Cist CBD",
+        title:"100% Čist CBD",
         text:""
     }
 ]

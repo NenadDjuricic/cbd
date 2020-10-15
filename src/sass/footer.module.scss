@@ -1,7 +1,7 @@
 .footer {
   background: linear-gradient(rgba(63, 208, 212, 0.7), rgba(0, 0, 0, 0.4));
   
-    padding: 2rem;
+    padding: 1rem;
     text-align: center;
     color: var(--mainWhite);
     margin-top:auto;
@@ -11,7 +11,7 @@
     text-decoration: none;
     text-transform: uppercase;
     color: var(--mainWhite);
-    margin: 0.5rem 1rem;
+    margin: 0.5rem 0.7rem;
     letter-spacing: var(--mainSpacing);
     transition: var(--mainTransition);
     font-weight: bold;
@@ -35,4 +35,16 @@
     letter-spacing: var(--mainSpacing);
     line-height: 2;
   }
-  
+  @media screen and (max-width: 450px) {
+    .links a {
+      display: block;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: var(--mainWhite);
+      margin: 1rem 1rem;
+      letter-spacing: var(--mainSpacing);
+      transition: var(--mainTransition);
+      font-weight: bold;
+    }
+    
+}

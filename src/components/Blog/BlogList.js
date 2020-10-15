@@ -25,7 +25,7 @@ query{
 `
 const BlogList = () => {
     const {posts} = useStaticQuery(getPosts);
-    console.log(posts);
+   
     return (
         <section className={styles.blog}>
             <Title title="Nase" subtitle="vesti"/>

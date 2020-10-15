@@ -21,19 +21,19 @@ const Cbd = ({data}) => {
      <Carousel>
   <Carousel.Item> 
   <StyledHero home="true" img={data.defaultBcgCbd.childImageSharp.fluid}>
-     <Banner title="CBD: aktivni sastojak legalnog kanabisa" info="Glavna komponenta legalnog kanabisa je CannaBiDol, jedan od više od 60 kanabinoida prisutnih u biljci konoplje, mnoge studije su dokazale terapeutski potencijal u lečenju bolova kao što je migrena, promoviše san, smanjuje anksioznost i paniku i sve se više koristi u terapijama složenijih bolesti kao što su multipla skleroza, epilepsija, pa čak i rak, sa zadovoljavajućim rezultatima.">
+     <Banner stil={style.rt} title="CBD: aktivni sastojak legalnog kanabisa" info="Glavna komponenta legalnog kanabisa je CannaBiDol, jedan od više od 60 kanabinoida prisutnih u biljci konoplje, mnoge studije su dokazale terapeutski potencijal u lečenju bolova kao što je migrena, promoviše san, smanjuje anksioznost i paniku i sve se više koristi u terapijama složenijih bolesti kao što su multipla skleroza, epilepsija, pa čak i rak, sa zadovoljavajućim rezultatima.">
      </Banner>
      </StyledHero>
   </Carousel.Item>
   <Carousel.Item> 
   <StyledHero home="true"  img={data.defaultBcgCbd2.childImageSharp.fluid}>
-     <Banner title="CBD: aktivni sastojak legalnog kanabisa" info="Glavna komponenta legalnog kanabisa je CannaBiDol, jedan od više od 60 kanabinoida prisutnih u biljci konoplje, mnoge studije su dokazale terapeutski potencijal u lečenju bolova kao što je migrena, promoviše san, smanjuje anksioznost i paniku i sve se više koristi u terapijama složenijih bolesti kao što su multipla skleroza, epilepsija, pa čak i rak, sa zadovoljavajućim rezultatima.">
+     <Banner stil={style.rt} title="CBD: aktivni sastojak legalnog kanabisa" info="Glavna komponenta legalnog kanabisa je CannaBiDol, jedan od više od 60 kanabinoida prisutnih u biljci konoplje, mnoge studije su dokazale terapeutski potencijal u lečenju bolova kao što je migrena, promoviše san, smanjuje anksioznost i paniku i sve se više koristi u terapijama složenijih bolesti kao što su multipla skleroza, epilepsija, pa čak i rak, sa zadovoljavajućim rezultatima.">
      </Banner>
      </StyledHero>
   </Carousel.Item>
   <Carousel.Item> 
   <StyledHero home="true" img={data.defaultBcgCbd3.childImageSharp.fluid}>
-     <Banner title="CBD: aktivni sastojak legalnog kanabisa" info="Glavna komponenta legalnog kanabisa je CannaBiDol, jedan od više od 60 kanabinoida prisutnih u biljci konoplje, mnoge studije su dokazale terapeutski potencijal u lečenju bolova kao što je migrena, promoviše san, smanjuje anksioznost i paniku i sve se više koristi u terapijama složenijih bolesti kao što su multipla skleroza, epilepsija, pa čak i rak, sa zadovoljavajućim rezultatima.">
+     <Banner stil={style.rt} title="CBD: aktivni sastojak legalnog kanabisa" info="Glavna komponenta legalnog kanabisa je CannaBiDol, jedan od više od 60 kanabinoida prisutnih u biljci konoplje, mnoge studije su dokazale terapeutski potencijal u lečenju bolova kao što je migrena, promoviše san, smanjuje anksioznost i paniku i sve se više koristi u terapijama složenijih bolesti kao što su multipla skleroza, epilepsija, pa čak i rak, sa zadovoljavajućim rezultatima.">
      </Banner>
      </StyledHero>
   </Carousel.Item>
