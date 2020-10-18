@@ -22,7 +22,7 @@ export const Contact = () => {
               name="email"
               id="email"
               className={styles.formControl}
-              placeholder="Vas email"
+              placeholder="Vaš email"
             />
           </div>
           <div>
@@ -31,13 +31,13 @@ export const Contact = () => {
               id="message"
               rows="10"
               className={styles.formControl}
-              placeholder="Odgovoricemo Vam u najbrzem mogucem roku :)"
+              placeholder="Odgovorićemo Vam u najbrzem mogućem roku :)"
             />
           </div>
           <div>
             <input
               type="submit"
-              value="Posalji"
+              value="Pošalji"
               className={styles.submit}
             />
           </div>

@@ -26,10 +26,10 @@ Iz tog razloga,visok kvalitet,pouzdanost i profesionalnost su karakteristike po 
    </div>
    <div className="col-12 col-md-12 col-lg-6 col-xl-6 mt-auto mb-auto">
      <h1>Posao rođen iz strasti</h1>
-     <p>People say that if you choose a job you love you will never work a day in your life. We, with Crystalweed, have succeeded in it. Born from an agricultural tradition, we have always cultivated a great passion for the land, which over time has led us to take an interest in alternative cultures, including that of legal cannabis.</p>
+     <p>Ljudi kažu da ako odaberete posao koji volite nikada nećete raditi ni dan u životu. Mi smo sa Crystalweed-om uspeli u tome. Rođeni iz poljoprivredne tradicije, uvek smo gajili veliku strast prema zemlji, što nas je vremenom navelo da se zainteresujemo za alternativne kulture, uključujući kulturu legalne kanabisa.</p>
      <blockquote className={`${style.blockquote} ${style.blockquoteCustom} bg-white p-5 shadow rounded mt-5`}>
                     <div className={`${style.blockquoteCustomIcon} bg-info shadow-sm`}><FaQuoteLeft className="text-white"/></div>
-                    <p className="mb-0 mt-2 font-italic">"We can live a wonderful life in the world if we know how to work and love, work for those we love and love what we work for."</p>
+                    <p className="mb-0 mt-2 font-italic">"Možemo živeti divan život u svetu ako znamo da radimo i volimo, radimo za one koje volimo i volimo ono za šta radimo."</p>
                     <footer className="blockquote-footer pt-4 mt-4 border-top">Lev Tolstoy
                     </footer>
                 </blockquote>

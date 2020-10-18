@@ -40,7 +40,7 @@ const ImagesIndex = () => {
  <ul className={`${styles.ul} container-fluid`}>
   <li className={`${styles.feature} position-relative`}>
   <div className={`${styles.textBlock} d-none d-sm-block`}>
-    <h4>Opustite se uz omiljeni ukus čaja</h4>
+    <h4 className="m-2">Opustite se uz omiljeni ukus čaja</h4>
     
   </div>
   <div className={`${styles.textBlockSecond}`}>

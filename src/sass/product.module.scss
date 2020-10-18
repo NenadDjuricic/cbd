@@ -49,7 +49,6 @@
   text-align: left;
 }
 .footer h3 {
-  text-transform: capitalize;
   margin-bottom: auto;
   height: 70px;
   font-size: 1.5rem;
@@ -79,4 +78,11 @@
   color: var(--darkGrey);
   text-transform: uppercase;
   text-align: right;
+}
+@media screen and (max-width: 416px) {
+  .footer h3 {
+    margin-bottom: auto;
+    height: 90px;
+    font-size: 1.2rem;
+  }
 }
