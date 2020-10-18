@@ -33,7 +33,7 @@ const pupoljci = ({data}) => {
     return (
         <Layout>
         <div> 
-        <Title title="Nasi" subtitle="Pupoljci" />
+        <Title title="Naši" subtitle="Pupoljci" />
         <section className={styles.tours}>
         <div className={styles.center}>
         {proizvodi.map(({node})=> {

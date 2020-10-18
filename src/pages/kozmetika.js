@@ -43,23 +43,44 @@ query{
       }
     }
   }
+  kozmetika:allContentfulProizvod(filter:{kategorija: {eq:"Kozmetika"}}){
+    edges{
+      node{
+        ime
+        slug 
+        contentful_id
+        kategorija
+        opis{
+          opis
+        }
+       images{
+          fluid{
+            ...GatsbyContentfulFluid
+          }
+        }
+      }
+    }
+  }
 }
 `
 
 const kozmetika = ({data}) => {
     const kreme = data.kreme.edges;
     const setovi = data.setovi.edges;
-
+    const kozmetika = data.kozmetika.edges
     return (
         <Layout>
         <div> 
-        <Title title="Nasa" subtitle="Kozmetika" />
+        <Title title="Naša" subtitle="Kozmetika" />
         <section className={styles.tours}>
         <div className={styles.center}>
         {kreme.map(({node})=> {
            return <Product key={node.contentful_id} proizvod={node} />
          } )}
          {setovi.map(({node})=> {
+           return <Product key={node.contentful_id} proizvod={node} />
+         } )}
+         {kozmetika.map(({node})=> {
            return <Product key={node.contentful_id} proizvod={node} />
          } )}
          </div>

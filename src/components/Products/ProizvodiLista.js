@@ -16,7 +16,7 @@ export default class ProizvodiLista extends Component {
     }
     render() {
         return <section className={styles.tours}>
-<Title title="Nasi" subtitle="proizvodi"/>
+<Title title="Naši" subtitle="proizvodi"/>
 <div className={`container-fluid ${styles.center}`}>
     {
         this.state.sortiraniProizvodi.map(({node})=>{

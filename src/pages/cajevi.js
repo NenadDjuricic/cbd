@@ -34,7 +34,7 @@ const cajevi = ({data}) => {
     return (
         <Layout>
         <div> 
-        <Title title="Nasi" subtitle="Cajevi" />
+        <Title title="Naši" subtitle="Čajevi" />
         <section className={styles.tours}>
         <div className={styles.center}>
         {proizvodi.map(({node})=> {

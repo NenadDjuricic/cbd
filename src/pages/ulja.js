@@ -33,7 +33,7 @@ const ulja = ({data}) => {
     return (
         <Layout>
         <div> 
-        <Title title="Nasa" subtitle="Ulja" />
+        <Title title="Naša" subtitle="Ulja" />
         <section className={styles.tours}>
         <div className={styles.center}>
         {proizvodi.map(({node})=> {
