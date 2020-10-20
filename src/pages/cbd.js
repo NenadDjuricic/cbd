@@ -9,7 +9,7 @@ import { Carousel} from "react-bootstrap"
 import Prog from '../components/progress'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
-
+import { Helmet } from 'react-helmet'
 
 const Cbd = ({data}) => {
   useEffect(()=>{
@@ -18,6 +18,17 @@ const Cbd = ({data}) => {
   return(
   <>
      <Layout>
+     <Helmet htmlAttributes={{lang: "rs"}} title={"Crystalweed Srbija | Šta je CBD?"}>
+       <meta name="description" content={data.site.siteMetadata.description} />
+       <meta name="keywords" content={data.site.siteMetadata.keywords} />
+       <meta property="og:title" content={data.site.siteMetadata.title} />
+       <meta property="og:type" content="website" />
+       <meta property="og:description" content={data.site.siteMetadata.description} />
+       <meta property="og:image" content={data.site.siteMetadata.image} />
+       <meta property="og:locale" content="sr_RS" />
+       <meta property="og:url" content={data.site.siteMetadata.url} />
+       <link rel="canonical" href={data.site.siteMetadata.url} />
+     </Helmet>
      <Carousel>
   <Carousel.Item> 
   <StyledHero home="true" img={data.defaultBcgCbd.childImageSharp.fluid}>
@@ -48,7 +59,7 @@ const Cbd = ({data}) => {
   <div className="row">
     <div className="col-12 col-md-12 col-lg-6 align-self-center">
     <h1>Šta je CBD?</h1>
-  <p className={style.para}>CBD je fitokanabinoid koji se uglavnom nalazi u cvetovima biljke kanabis i glavna je komponenta legalnog kanabisa. Za razliku od THC-a, on nije psihoaktivan, pa se čini da nema neželjenih efekata, kao i da poseduje mnoštvo korisnih svojstava koja još uvek nisu dobro otkrivena.</p>
+  <p className={style.para}>CBD je fitokanabinoid koji se uglavnom nalazi u cvetovima biljke kanabis i glavna je komponenta legalnog kanabisa. Za razliku od THC-a, on nije psihoaktivan, pa nema neželjenih efekata i poseduje mnoštvo korisnih svojstava koja još uvek nisu dobro otkrivena.</p>
   </div>
   <div className="col-12 col-md-12 col-lg-6" data-aos="fade-left">
   <Img fluid={data.cbdFirst.childImageSharp.fluid}  className="d-none d-sm-none d-md-block"/>
@@ -131,6 +142,17 @@ query{
       fluid(maxWidth:360, quality:90){
         ...GatsbyImageSharpFluid
       }
+    }
+  }
+  site{
+    siteMetadata{
+      description
+      keywords
+      title
+      url
+      author
+      description
+      image
     }
   }
 }

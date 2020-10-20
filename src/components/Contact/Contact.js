@@ -6,7 +6,7 @@ export const Contact = () => {
         <section className={styles.contact}>
       <Title title="Kontaktirajte" subtitle="nas" />
       <div className={styles.center}>
-        <form action="https://formspree.io/nenaddjuricic93@gmail.com" method="POST" className={styles.form}>
+        <form action="https://formspree.io/crystalweedsrbija@gmail.com" method="POST" className={styles.form}>
           <div>
             <input
               type="text"
@@ -42,6 +42,9 @@ export const Contact = () => {
             />
           </div>
         </form>
+        <h6 className="d-inline">Telefon:</h6><p className="d-inline">065/66-338-721</p>
+        <br></br>
+        <h6 className="d-inline">Uvoznik i zastupnik Crystalweed za Srbiju:</h6><p className="d-inline">Hidra Line DOO</p>
       </div>
     </section>
     )

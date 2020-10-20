@@ -5,8 +5,20 @@ import Layout from "../components/Layout"
 import Title from "../components/Tittle"
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import {graphql } from "gatsby"
+import { Helmet } from 'react-helmet'
 export const getProducts = graphql`
 query{
+  site{
+    siteMetadata{
+      description
+      keywords
+      title
+      url
+      author
+      description
+      image
+    }
+  }
     ulja:allContentfulProizvod(filter:{kategorija:{eq:"Ulje"}}){
       edges{
         node{
@@ -30,8 +42,20 @@ query{
 
 const ulja = ({data}) => {
     const proizvodi = data.ulja.edges;
+    const seo = data.site.siteMetadata;
     return (
         <Layout>
+          <Helmet htmlAttributes={{lang: "rs"}} title={"Crystalweed Srbija | Ulja"}>
+       <meta name="description" content={seo.description} />
+       <meta name="keywords" content={seo.keywords} />
+       <meta property="og:title" content={seo.title} />
+       <meta property="og:type" content="website" />
+       <meta property="og:description" content={seo.description} />
+       <meta property="og:image" content={seo.image} />
+       <meta property="og:locale" content="sr_RS" />
+       <meta property="og:url" content={seo.url} />
+       <link rel="canonical" href={seo.url} />
+     </Helmet>
         <div> 
         <Title title="Naša" subtitle="Ulja" />
         <section className={styles.tours}>

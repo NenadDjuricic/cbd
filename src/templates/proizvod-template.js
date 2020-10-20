@@ -4,12 +4,24 @@ import Layout from "../components/Layout"
 import styles from "../sass/template.module.scss"
 import Img from "gatsby-image"
 import Nutrition from "../components/Nutrition"
+import { Helmet } from 'react-helmet'
 import SastojciLinija from "../components/SastojciLinije"
 const Template = ({data}) => {
     const {images} = data.nekiProizvod;
     const [mainImage,...nekiProizvodImages] = images;
     return (
         <Layout>
+            <Helmet htmlAttributes={{lang: "rs"}}>
+       <meta name="description" content={data.nekiProizvod.opis.opis} />
+       <meta name="keywords" content={data.site.siteMetadata.keywords} />
+       <meta property="og:title" content={data.site.siteMetadata.title} />
+       <meta property="og:type" content="website" />
+       <meta property="og:description" content={data.site.siteMetadata.description} />
+       <meta property="og:image" content={data.site.siteMetadata.image} />
+       <meta property="og:locale" content="sr_RS" />
+       <meta property="og:url" content={data.site.siteMetadata.url} />
+       <link rel="canonical" href={data.site.siteMetadata.url} />
+     </Helmet>
             <section className={styles.template}>
            
             <div className="container">
@@ -57,6 +69,17 @@ query($slug:String!){
           }
         }
     }
+    site{
+        siteMetadata{
+          description
+          keywords
+          title
+          url
+          author
+          description
+          image
+        }
+      }
 }
 `
 export default Template

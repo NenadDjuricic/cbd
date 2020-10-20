@@ -2,10 +2,10 @@ import React from 'react'
 
 const Nutrition = () => {
     return (
-        <div class="container-fluid">
+        <div className="container-fluid">
             <p className="text-black-50">Potopite filter u 200 ml ključale vode, ostavite da se infuzira 5-7 minuta, zasladite kašičicom meda.</p>
             <div className="tabela">
-  <table class="table table-striped table-bordered table-sm">
+  <table className="table table-striped table-bordered table-sm">
     <thead>
       <tr>
         <th scope="col">Nutritivne vrednosti</th>
