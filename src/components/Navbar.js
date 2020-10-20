@@ -39,14 +39,14 @@ const Navbar = () => {
               </Dropdown.Toggle>
             
               <Dropdown.Menu>
-                <Dropdown.Item><Link fade to="/kozmetika" duration={1}>Kozmetika</Link></Dropdown.Item>
-                <Dropdown.Item><Link fade to="/cajevi" duration={1}>Čajevi</Link></Dropdown.Item>
-                <Dropdown.Item ><Link fade to="/ulja" duration={1}>Ulja</Link></Dropdown.Item>
-                <Dropdown.Item ><Link fade to="/pupoljci" duration={1}>Pupoljci</Link></Dropdown.Item>
+                <Dropdown.Item><Link  to="/kozmetika" >Kozmetika</Link></Dropdown.Item>
+                <Dropdown.Item><Link  to="/cajevi">Čajevi</Link></Dropdown.Item>
+                <Dropdown.Item ><Link  to="/ulja" >Ulja</Link></Dropdown.Item>
+                <Dropdown.Item ><Link  to="/pupoljci">Pupoljci</Link></Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown></li>:
               <li key={index}>
-                <Link fade to={item.path} duration={0.5}>{item.text}</Link>
+                <Link  to={item.path} >{item.text}</Link>
                 
               </li>
           

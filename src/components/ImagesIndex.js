@@ -23,7 +23,7 @@ query{
   }
   third:file(relativePath: { eq: "cbd.jpeg" }){
     childImageSharp {
-      fluid(maxWidth:660, maxHeight:400, quality:100){
+      fluid(maxWidth:660, maxHeight:400, quality:60){
         ...GatsbyImageSharpFluid
       }
     }
