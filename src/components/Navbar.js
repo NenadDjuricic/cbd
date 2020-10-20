@@ -1,11 +1,10 @@
 import React,{useState} from 'react'
-import {Link} from 'gatsby'
+import Link from 'gatsby-link'
 import styles from '../sass/navbar.module.scss'
 import links from '../constants/links'
 import logo from '../images/logo2.png'
 import { FaAlignRight } from "react-icons/fa"; 
 import { Dropdown } from 'react-bootstrap';
-import AniLink from "gatsby-plugin-transition-link/AniLink";
 const Navbar = () => {
   const [isOpen, setNav] = useState(false)
   const toggleNav = () => {
@@ -40,14 +39,14 @@ const Navbar = () => {
               </Dropdown.Toggle>
             
               <Dropdown.Menu>
-                <Dropdown.Item><AniLink fade to="/kozmetika" duration={0.5}>Kozmetika</AniLink></Dropdown.Item>
-                <Dropdown.Item><AniLink fade to="/cajevi">Čajevi</AniLink></Dropdown.Item>
-                <Dropdown.Item ><AniLink fade to="/ulja">Ulja</AniLink></Dropdown.Item>
-                <Dropdown.Item ><AniLink fade to="/pupoljci">Pupoljci</AniLink></Dropdown.Item>
+                <Dropdown.Item><Link fade to="/kozmetika" duration={1}>Kozmetika</Link></Dropdown.Item>
+                <Dropdown.Item><Link fade to="/cajevi" duration={1}>Čajevi</Link></Dropdown.Item>
+                <Dropdown.Item ><Link fade to="/ulja" duration={1}>Ulja</Link></Dropdown.Item>
+                <Dropdown.Item ><Link fade to="/pupoljci" duration={1}>Pupoljci</Link></Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown></li>:
               <li key={index}>
-                <AniLink fade to={item.path} duration={0.5}>{item.text}</AniLink>
+                <Link fade to={item.path} duration={0.5}>{item.text}</Link>
                 
               </li>
           
