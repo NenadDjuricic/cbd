@@ -24,6 +24,7 @@ export default ({data}) => (
        <meta property="og:image" content={data.site.siteMetadata.image} />
        <meta property="og:locale" content="sr_RS" />
        <meta property="og:url" content={data.site.siteMetadata.url} />
+       <meta name="google-site-verification" content="1t1546moPnt-lgKEAeI1T87sST79hwxe7ACN7YaoaX4" />
        <link rel="canonical" href={data.site.siteMetadata.url} />
      </Helmet>
      <StyledHero home="true" img={data.defaultBcg.childImageSharp.fluid}>
