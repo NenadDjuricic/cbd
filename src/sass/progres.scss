@@ -23,15 +23,16 @@
 	transition: 1s ease 0.3s;
 }
 .service {
-	margin: 0.5rem 0;
-	text-align: center;
-	img{
-	  max-height: 100px;
-	}
 	h4{
 	  font-size:1.2rem;
 	}
   }
   .service h4 {
 	text-transform: uppercase;
+  }
+  .imgPos{
+	  max-height: auto;
+	 max-width: 110px;
+	 margin-right: auto;
+	 margin-left: auto;
   }

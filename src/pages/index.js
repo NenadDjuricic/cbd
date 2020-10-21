@@ -12,20 +12,10 @@ import Toggler from '../components/Toggler'
 import {graphql} from "gatsby"
 import ImagesIndex from '../components/ImagesIndex'
 import CorouselBlog from "../components/corouselBlog"
-import { Helmet } from 'react-helmet'
+import SEO from "../components/SEO"
 export default ({data}) => (
    <Layout>
-     <Helmet htmlAttributes={{lang: "rs"}} title={data.site.siteMetadata.title}>
-       <meta name="description" content={data.site.siteMetadata.description} />
-       <meta name="keywords" content={data.site.siteMetadata.keywords} />
-       <meta property="og:title" content={data.site.siteMetadata.title} />
-       <meta property="og:type" content="website" />
-       <meta property="og:description" content={data.site.siteMetadata.description} />
-       <meta property="og:image" content={data.site.siteMetadata.image} />
-       <meta property="og:locale" content="sr_RS" />
-       <meta property="og:url" content={data.site.siteMetadata.url} />
-       <link rel="canonical" href={data.site.siteMetadata.url} />
-     </Helmet>
+     <SEO title="Crystalweed Srbija" description="Crystalweed je kompanija koja se bavi prodajom legalnih proizvoda na bazi CBD-a" ></SEO>
      <StyledHero home="true" img={data.defaultBcg.childImageSharp.fluid}>
      <Banner title="Crystalweed® najbolji CBD proizvodi u Srbiji" info="Dobrodošli u legalan svet proizvoda od kanabisa" subInfo="CBD Ulja  — CBD Čajevi — CBD Kozmetika — CBD Pupoljci">
       <Link to='/products' className="btn-white">Proizvodi</Link>
@@ -51,17 +41,6 @@ export default ({data}) => (
 
 export const query = graphql`
 query{
-  site{
-    siteMetadata{
-      description
-      keywords
-      title
-      url
-      author
-      description
-      image
-    }
-  }
   defaultBcg:file(relativePath: { eq: "frontPage.jpeg" }){
     childImageSharp {
       fluid(maxWidth:4160, quality:90){

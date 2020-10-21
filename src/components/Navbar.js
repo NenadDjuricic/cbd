@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import Link from 'gatsby-link'
+import {Link} from 'gatsby'
 import styles from '../sass/navbar.module.scss'
 import links from '../constants/links'
 import logo from '../images/logo2.png'
@@ -19,6 +19,7 @@ const Navbar = () => {
             type="button"
             className={styles.logoBtn}
             onClick={toggleNav}
+            aria-label="Left Align"
             ><FaAlignRight className={styles.logoIcon}/>
           </button>
         </div>

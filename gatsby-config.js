@@ -5,7 +5,7 @@ module.exports = {
   /* Your site config here */
   siteMetadata:{
     title: "Crystalweed Srbija",
-    description:"CBD Srbija je kompanija koja se bavi prodajom legalnih proizvoda na bazi CBD-a",
+    description:"Crystalweed je kompanija koja se bavi prodajom legalnih proizvoda na bazi CBD-a",
     author: "Nenad Djuričić(Crystalweed.rs)",
     image:"/CbdProducts.jpeg",
     keywords: "cbd, gatsby, srbija, legalno",

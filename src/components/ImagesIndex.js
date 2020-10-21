@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from "../sass/imageIndex.module.scss"
-import AniLink from "gatsby-plugin-transition-link/AniLink";
+import {Link} from "gatsby";
 
 import {graphql, useStaticQuery} from 'gatsby'
 import Img from "gatsby-image"
@@ -44,20 +44,20 @@ const ImagesIndex = () => {
     
   </div>
   <div className={`${styles.textBlockSecond}`}>
-  <AniLink fade to="/cajevi" duration={0.5}><h5 className="text-center">CBD Čajevi</h5></AniLink>
+  <Link fade to="/cajevi" duration={0.5}><h5 className="text-center">CBD Čajevi</h5></Link>
   </div>
   <Img fluid={response.second.childImageSharp.fluid} className={`${styles.imge}`}/>
   
   </li>
   <li className={`${styles.two} position-relative`}>
   <div className={`${styles.textBlockThird}`}>
-  <AniLink fade to="/kozmetika" duration={0.5}><h5 className="text-center">CBD Kozmetika</h5></AniLink>
+  <Link fade to="/kozmetika" duration={0.5}><h5 className="text-center">CBD Kozmetika</h5></Link>
   </div>
   <Img fluid={response.first.childImageSharp.fluid} className={`${styles.imge2}`}/>
   </li>
   <li className={`position-relative`}>
   <div className={`${styles.textBlockThird}`}>
-  <AniLink fade to="/ulja" duration={0.5}><h5 className="text-center">CBD Ulja</h5></AniLink>
+  <Link fade to="/ulja" duration={0.5}><h5 className="text-center">CBD Ulja</h5></Link>
   </div>
   <Img fluid={response.third.childImageSharp.fluid} className={`${styles.imge1}`}/>
   </li>

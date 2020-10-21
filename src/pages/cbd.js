@@ -9,7 +9,7 @@ import { Carousel} from "react-bootstrap"
 import Prog from '../components/progress'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
-import { Helmet } from 'react-helmet'
+import SEO from "../components/SEO"
 
 const Cbd = ({data}) => {
   useEffect(()=>{
@@ -18,17 +18,7 @@ const Cbd = ({data}) => {
   return(
   <>
      <Layout>
-     <Helmet htmlAttributes={{lang: "rs"}} title={"Crystalweed Srbija | Šta je CBD?"}>
-       <meta name="description" content={data.site.siteMetadata.description} />
-       <meta name="keywords" content={data.site.siteMetadata.keywords} />
-       <meta property="og:title" content={data.site.siteMetadata.title} />
-       <meta property="og:type" content="website" />
-       <meta property="og:description" content={data.site.siteMetadata.description} />
-       <meta property="og:image" content={data.site.siteMetadata.image} />
-       <meta property="og:locale" content="sr_RS" />
-       <meta property="og:url" content={data.site.siteMetadata.url} />
-       <link rel="canonical" href={data.site.siteMetadata.url} />
-     </Helmet>
+     <SEO title="Crystalweed Srbija | Šta je CBD?" description="CBD je fitokanabinoid koji se uglavnom nalazi u cvetovima biljke kanabis i glavna je komponenta legalnog kanabisa. Za razliku od THC-a, on nije psihoaktivan, pa nema neželjenih efekata i poseduje mnoštvo korisnih svojstava koja još uvek nisu dobro otkrivena." ></SEO>
      <Carousel>
   <Carousel.Item> 
   <StyledHero home="true" img={data.defaultBcgCbd.childImageSharp.fluid}>
@@ -142,17 +132,6 @@ query{
       fluid(maxWidth:360, quality:90){
         ...GatsbyImageSharpFluid
       }
-    }
-  }
-  site{
-    siteMetadata{
-      description
-      keywords
-      title
-      url
-      author
-      description
-      image
     }
   }
 }

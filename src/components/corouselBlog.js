@@ -4,7 +4,7 @@ import Card from 'react-bootstrap/Card'
 import {graphql, useStaticQuery} from 'gatsby'
 import Img from "gatsby-image"
 import Tittle from './Tittle'
-import AniLink from 'gatsby-plugin-transition-link/AniLink';
+import {Link} from 'gatsby';
 const query = graphql`
 query{
   first:file(relativePath: { eq: "girlCbd.jpeg" }){
@@ -45,9 +45,9 @@ const CorouselBlog = () => {
       Sada je izvesna činjenica da kanabis ima korisna svojstva i za kožu našeg tela i da, ne samo zvezde, već i obični ljudi, koristi kozmetiku na bazi kanabisa, tačnije sa CBD-om.
       </Card.Text>
       
-      <AniLink fade to="/blog/cbd-kozmetika" className="btn-secondary " >
+      <Link fade to="/blog/cbd-kozmetika" className="btn-secondary " >
           Pročitaj više
-        </AniLink>
+        </Link>
         
     </Card.Body>
     <Card.Footer>
@@ -62,9 +62,9 @@ const CorouselBlog = () => {
       Ljubitelji biljnih čajeva i infuzija sigurno neće propustiti priliku da probaju biljne čajeve sa CBD-om.
       </Card.Text>
      
-      <AniLink fade to="/blog/cbd-cajevi" className="btn-secondary " >
+      <Link fade to="/blog/cbd-cajevi" className="btn-secondary " >
           Pročitaj više
-        </AniLink>
+        </Link>
        
     </Card.Body>
     <Card.Footer>
@@ -79,9 +79,9 @@ const CorouselBlog = () => {
       Šta je ulje kanabisa? Ulje kanabidiol (ulje kanabisa), poznato i kao CBD ulje, izvlači se iz kanabisa, međutim, ne treba ga mešati sa uljem konoplje. CBD ulje sve više napreduje zahvaljujući svojim višestrukim zdravstvenim prednostima.
       </Card.Text>
       
-      <AniLink fade to="/blog/cbd-ulje" className="btn-secondary" >
+      <Link fade to="/blog/cbd-ulje" className="btn-secondary" >
           Pročitaj više
-        </AniLink>
+        </Link>
         
     </Card.Body>
     <Card.Footer>
@@ -90,9 +90,9 @@ const CorouselBlog = () => {
   </Card>
 </CardDeck>
 <div className="text-center mt-4 mb-2">
-<AniLink fade to="/novosti" className="btn-primary " >
+<Link fade to="/novosti" className="btn-primary " >
           Sve vesti
-        </AniLink>
+        </Link>
         </div>
        </div>
     )

@@ -1,9 +1,38 @@
 import React,{useState} from 'react'
-import img5 from "../images/cannabis-test.png"
-import img4 from "../images/marijuana.png"
-import img3 from "../images/legal.png"
+import {graphql, useStaticQuery} from 'gatsby'
+import Img from "gatsby-image"
 import stil from "../sass/progres.scss"
+
+const query = graphql`
+query{
+  third:file(relativePath: { eq: "cannabis-test.png" }){
+    childImageSharp {
+      fluid(maxWidth:200, maxHeight: 200, quality:90){
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+  second:file(relativePath: { eq: "marijuana.png" }){
+    childImageSharp {
+      fluid(maxWidth:200, maxHeight: 200, quality:90){
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+  first:file(relativePath: { eq: "legal.png" }){
+    childImageSharp {
+      fluid(maxWidth:200, maxHeight:200, quality:90){
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+}
+`
+
+
+
 const Progress = ({done,props,text}) => {
+	const response = useStaticQuery(query);
 	const [style, setStyle] = useState();
 	
 	setTimeout(() => {
@@ -19,7 +48,7 @@ const Progress = ({done,props,text}) => {
         <div className="container-fluid d-flex justify-content-center">
             <div className="row">
             <div className="col-12 col-md-4 service">
-            <img className={`img-fluid `} src={img3} alt="progress marijuana"></img>
+            <Img className="imgPos" fluid={response.first.childImageSharp.fluid} alt="progress marijuana"></Img>
 		<div className="progress">
 			<div className="progress-done" style={style}>
 				{done}% Legalno
@@ -29,7 +58,7 @@ const Progress = ({done,props,text}) => {
         </div>
        
         <div className="col-12 col-md-4  service">
-		<img className={`img-fluid `} src={img4} alt="progress legal"></img>
+		<Img className="imgPos" fluid={response.second.childImageSharp.fluid} alt="progress legal"></Img>
 		<div className="progress">
 			<div className="progress-done" style={style}>
 				{done}% Organski
@@ -37,7 +66,7 @@ const Progress = ({done,props,text}) => {
 		</div>
         </div>
         <div className="col-12 col-md-4  service">
-		<img className={`img-fluid `} src={img5} alt="progress marijuana"></img>
+		<Img className="imgPos" fluid={response.third.childImageSharp.fluid} alt="progress marijuana"></Img>
 		<div className="progress">
 			<div className="progress-done" style={style}>
 				{done}% Testirano

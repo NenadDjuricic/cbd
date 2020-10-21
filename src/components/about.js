@@ -29,7 +29,7 @@ const About = () =>{
            
       </article>
       <article  className={styles.aboutInfo}>
-        <h4>Posao rođen <br></br>iz strasti</h4>
+        <h4>Od ideje<br></br>do realizacije</h4>
         <p>Već više od 5 godina u ovom sektroru pazljivo biramo materijale za svoje proizvode kako bismo garantovali maksimalnu vrednost uz najviše iskustvo.</p>
         <p>Iz tog razloga,visok kvalitet,pouzdanost i profesionalnost su karakteristike po kojima želimo da ostanemo upamćeni!</p>
       <Link to="/oNama"><button type="button" className="btn-primary">Više o nama</button></Link>

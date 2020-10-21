@@ -3,7 +3,6 @@ import Img from "gatsby-image"
 import {FaArrowRight} from 'react-icons/fa'
 import {Link} from "gatsby"
 import { graphql, useStaticQuery } from "gatsby"
-import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 const query = graphql`
 query{
@@ -32,7 +31,7 @@ const Toggler = () => {
               <div className="owl-stage">
                 <div className="owl-item">
                   <div className="item-wrapper">
-                  <AniLink fade to="/products" duration={0.5}> <div className="title">CBD u kozmetici</div></AniLink>
+                  <Link fade to="/products" duration={0.5}> <div className="title">CBD u kozmetici</div></Link>
                     <div className="description">
                       <p style={{color:"#3fd0d4"}}>CBD krema za lice protiv starenja 
                       </p>
