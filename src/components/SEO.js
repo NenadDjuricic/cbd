@@ -20,7 +20,7 @@ const SEO = ({title,description}) => {
     const {site} = useStaticQuery(getData);
     const {siteDescription,siteTitle,keywords,url,image,author} = site.siteMetadata
     return (
-        <Helmet htmlAttributes={{lang: 'rs'}} title={`${title} | ${siteTitle}`}>
+        <Helmet htmlAttributes={{lang: 'rs'}} title={`${title}`}>
             <meta name="description" content={description || siteDescription} />
             <meta name="image" content={image} />
             <meta name="keywords" content={keywords} />
